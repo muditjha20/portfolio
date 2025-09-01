@@ -1,528 +1,506 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mudit Mayank Jha | Portfolio</title>
-
-    <!-- External libs -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-
-    <!-- Your stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudit Mayank Jha | Portfolio</title>
+<!-- External libs -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Roboto+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<!-- Your stylesheet -->
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Mudit Mayank Jha <span>.</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#competitions">Competitions</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-btn" aria-label="Open menu" aria-expanded="false" role="button" tabindex="0">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div id="particles-js"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Mudit Mayank Jha</h1>
-                <p>Creative Learner. Tech Enthusiast. Software Developer.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image"></div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div>
-                    <p>I'm a Computer Science student with a passion for building innovative software solutions and experience in both academic and practical projects, I strive to create impactful technology.</p>
-                    <p>My expertise spans artificial intelligence, full stack developement and algorithm design. I enjoy tackling complex problems and turning ideas into reality through code.</p>
-                </div>
-                <div>
-                    <div class="education-item">
-                        <h3>University of the West Indies</h3>
-                        <div class="education-meta">
-                            <span>Bachelor of Science in Computer Science</span>
-                            <span class="gpa">GPA: 4.13/4.3</span>
-                        </div>
-                        <p>Expected graduation: October 2027</p>
-                    </div>
-                    <div class="education-item">
-                        <h3>University of Richmond, Virginia</h3>
-                        <div class="education-meta">
-                            <span>International Exchange Program</span>
-                            <span class="gpa">GPA: 3.91/4.0</span>
-                        </div>
-                        <p>January 2025 - December 2025</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-filters">
-                <span class="project-filter active" data-filter="all">All</span>
-                <span class="project-filter" data-filter="web">Web Dev</span>
-                <span class="project-filter" data-filter="ml">ML/AI</span>
-                <span class="project-filter" data-filter="algo">Algorithms</span>
-                <span class="project-filter" data-filter="systems">Systems</span>
-            </div>
-            <div class="project-grid">
-                <!-- Kanban Board -->
-                <div class="project-card" data-category="web">
-                    <div class="project-img">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Kanban-Board Web App</h3>
-                        <p class="project-desc">Full-stack Kanban board with React + TypeScript frontend and ASP.NET Core Web API backend.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">37% Data Sync Improvement</span>
-                            <span class="impact-badge impact-info">100+ Tasks</span>
-                            <span class="impact-badge impact-warning">0 Data Loss</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">ASP.NET Core</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="kanban">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Book Recommendation API -->
-                <div class="project-card" data-category="web">
-                    <div class="project-img">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Book Recommendation API</h3>
-                        <p class="project-desc">RESTful API in modern C++ using the Crow framework with personalized recommendations.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">100% Test Coverage</span>
-                            <span class="impact-badge impact-info">RESTful Design</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Crow Framework</span>
-                            <span class="tech-tag">REST API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="book">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DNA Subsequence Finder -->
-                <div class="project-card" data-category="algo">
-                    <div class="project-img">
-                        <i class="fas fa-dna"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">DNA Subsequence Finder</h3>
-                        <p class="project-desc">DNA sequence alignment tool in Java using the Needleman-Wunsch algorithm.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">100% Accuracy</span>
-                            <span class="impact-badge impact-info">Dynamic Programming</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Dynamic Programming</span>
-                            <span class="tech-tag">Bioinformatics</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="dna">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kernel Canary++ -->
-                <div class="project-card" data-category="ml">
-                    <div class="project-img">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Kernel Canary++</h3>
-                        <p class="project-desc">Real-time anomaly detection for system logs using AutoML and Isolation Forest.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">0.926 F1-Score</span>
-                            <span class="impact-badge impact-warning">100k+ Log Entries</span>
-                            <span class="impact-badge impact-info">2min AutoML Tuning</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Microsoft NNI</span>
-                            <span class="tech-tag">Isolation Forest</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="kernel">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Multi-Stop Route Optimizer -->
-                <div class="project-card" data-category="algo">
-                    <div class="project-img">
-                        <i class="fas fa-route"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Multi-Stop Route Optimizer</h3>
-                        <p class="project-desc">Real-time route optimization app using geocoding and dynamic programming.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">30-40% Time Reduction</span>
-                            <span class="impact-badge impact-warning">15 Stops Optimized</span>
-                            <span class="impact-badge impact-info">Real-time Geocoding</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">OSRM</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="route">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MyShell -->
-                <div class="project-card" data-category="systems">
-                    <div class="project-img">
-                        <i class="fas fa-terminal"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">MyShell</h3>
-                        <p class="project-desc">A Unix-like shell written in C with piping and output redirection.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">&lt;1s Execution</span>
-                            <span class="impact-badge impact-warning">50+ Commands</span>
-                            <span class="impact-badge impact-info">POSIX System Calls</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">C</span>
-                            <span class="tech-tag">POSIX</span>
-                            <span class="tech-tag">System Calls</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="shell">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Microsoft Azure Talent Change Predictor -->
-                <div class="project-card" data-category="ml">
-                    <div class="project-img">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Microsoft Azure Talent Change Predictor</h3>
-                        <p class="project-desc">End-to-end ML system to predict job-seeking behavior with XGBoost, Flask, and SHAP.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">67.6% Accuracy</span>
-                            <span class="impact-badge impact-warning">+112% F1</span>
-                            <span class="impact-badge impact-info">+185% Recall</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">XGBoost</span>
-                            <span class="tech-tag">Flask</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="azure">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Powered PDF Q&A Chatbot -->
-                <div class="project-card" data-category="ml">
-                    <div class="project-img">
-                        <i class="fas fa-file-lines"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Powered PDF Q&A Chatbot</h3>
-                        <p class="project-desc">Semantic search over long PDFs with embeddings + GPT for real-time answers.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">85% Accuracy</span>
-                            <span class="impact-badge impact-warning">100+ Pages</span>
-                            <span class="impact-badge impact-info">Real-time Q/A</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">OpenAI</span>
-                            <span class="tech-tag">Astra DB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="chatbot">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Convex Hull Visualizer -->
-                <div class="project-card" data-category="algo">
-                    <div class="project-img">
-                        <i class="fas fa-draw-polygon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Convex Hull Visualizer</h3>
-                        <p class="project-desc">Interactive Java Swing app visualizing Jarvis March for 2D point sets.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">31% Speed Improvement</span>
-                            <span class="impact-badge impact-warning">0 Graphical Lag</span>
-                            <span class="impact-badge impact-info">100+ Points</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Swing</span>
-                            <span class="tech-tag">Jarvis March</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="hull">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- LeafyLink -->
-                <div class="project-card" data-category="web">
-                    <div class="project-img">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">LeafyLink</h3>
-                        <p class="project-desc">Static plant marketplace with public API integration and Firebase hosting.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">&lt;1.2s Load Time</span>
-                            <span class="impact-badge impact-warning">Team of 4</span>
-                            <span class="impact-badge impact-info">API Integration</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="leafy">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RPG Super Adventure Game -->
-                <div class="project-card" data-category="algo">
-                    <div class="project-img">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">RPG Super Adventure Game</h3>
-                        <p class="project-desc">Turn-based RPG in C# WinForms showcasing OOP design with 14 classes.</p>
-                        <div class="project-impact">
-                            <span class="impact-badge impact-success">14 Classes</span>
-                            <span class="impact-badge impact-warning">OOP Design</span>
-                            <span class="impact-badge impact-info">Combat & Quests</span>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">WinForms</span>
-                            <span class="tech-tag">OOP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline view-details" data-project="rpg">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">C</span>
-                        <span class="skill-item">C#</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">TypeScript</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">HTML/CSS</span>
-                        <span class="skill-item">MIPS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">ASP.NET Core</span>
-                        <span class="skill-item">Crow (C++)</span>
-                        <span class="skill-item">Swing (Java)</span>
-                        <span class="skill-item">Langchain</span>
-                        <span class="skill-item">Flask</span>
-                        <span class="skill-item">Streamlit</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Azure</span>
-                        <span class="skill-item">Firebase</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Pandas</span>
-                        <span class="skill-item">Scikit-learn</span>
-                        <span class="skill-item">Socket Programming</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Competitions Section -->
-    <section class="competitions-section" id="competitions">
-        <div class="container">
-            <h2>Competitions & Achievements</h2>
-            <div class="competitions">
-                <div class="competition-card">
-                    <div class="competition-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>ICPC Caribbean Finals 2024</h3>
-                    <p>Silver Medal (TTO Qualifier)</p>
-                </div>
-                <div class="competition-card">
-                    <div class="competition-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>National Science Olympiad 2019</h3>
-                    <p>Gold Medal (Delhi Public School)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Section -->
-    <section class="leadership" id="leadership">
-        <div class="container">
-            <h2>Leadership & Activities</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">August 2025 - Present</div>
-                        <h3>President</h3>
-                        <p>UWI SoundWave Society</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">August 2024 - August 2025</div>
-                        <h3>Vice President</h3>
-                        <p>UWI Indian Cultural Society</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>muditjha1404@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>linkedin.com/in/mudit-mayank-jha-4b27b7203</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p>github.com/muditjha20</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <form class="contact-form" id="contactForm">
-                        <input type="text" placeholder="Your Name" required />
-                        <input type="email" placeholder="Your Email" required />
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="logo"><span></span></div>
-            <div class="social-links">
-                <a href="https://github.com/muditjha20" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mudit-mayank-jha-4b27b7203" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:muditjha1404@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2025 Mudit Mayank Jha. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Project Modals -->
-    <div class="modal" id="projectModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-body"></div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="main.js"></script>
+<!-- Header & Navigation -->
+<header>
+<div class="container">
+<nav>
+<div class="logo">Mudit Mayank Jha <span>.</span></div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#competitions">Competitions</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div aria-expanded="false" aria-label="Open menu" class="menu-btn" role="button" tabindex="0">
+<i class="fas fa-bars"></i>
+</div>
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div id="particles-js"></div>
+<div class="container">
+<div class="hero-content">
+<h1>Mudit Mayank Jha</h1>
+<p>Creative Learner. Tech Enthusiast. Software Developer.</p>
+<div class="hero-btns">
+<a class="btn" href="#projects">View Projects</a>
+<a class="btn btn-outline" href="#contact">Contact Me</a>
+</div>
+</div>
+</div>
+<div class="hero-image"></div>
+</section>
+<!-- About Section -->
+<section class="about" id="about">
+<div class="container">
+<h2>About Me</h2>
+<div class="about-grid">
+<div>
+<p>I'm a Computer Science student with a passion for building innovative software solutions and experience in both academic and practical projects, I strive to create impactful technology.</p>
+<p>My expertise spans artificial intelligence, full stack developement and algorithm design. I enjoy tackling complex problems and turning ideas into reality through code.</p>
+</div>
+<div>
+<div class="education-item">
+<h3>University of the West Indies</h3>
+<div class="education-meta">
+<span>Bachelor of Science in Computer Science</span>
+<span class="gpa">GPA: 4.13/4.3</span>
+</div>
+<p>Expected graduation: October 2027</p>
+</div>
+<div class="education-item">
+<h3>University of Richmond, Virginia</h3>
+<div class="education-meta">
+<span>International Exchange Program</span>
+<span class="gpa">GPA: 3.91/4.0</span>
+</div>
+<p>January 2025 - December 2025</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+<div class="container">
+<h2>My Projects</h2>
+<div class="project-filters">
+<span class="project-filter active" data-filter="all">All</span>
+<span class="project-filter" data-filter="web">Web Dev</span>
+<span class="project-filter" data-filter="ml">ML/AI</span>
+<span class="project-filter" data-filter="algo">Algorithms</span>
+<span class="project-filter" data-filter="systems">Systems</span>
+</div>
+<div class="project-grid">
+<!-- Kanban Board -->
+<div class="project-card" data-category="web">
+<div class="project-img">
+<i class="fas fa-tasks"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">Kanban-Board Web App</h3>
+<p class="project-desc">Full-stack Kanban board with React + TypeScript frontend and ASP.NET Core Web API backend.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">37% Data Sync Improvement</span>
+<span class="impact-badge impact-info">100+ Tasks</span>
+<span class="impact-badge impact-warning">0 Data Loss</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">React</span>
+<span class="tech-tag">TypeScript</span>
+<span class="tech-tag">ASP.NET Core</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="kanban" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- Book Recommendation API -->
+<div class="project-card" data-category="web">
+<div class="project-img">
+<i class="fas fa-book"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">Book Recommendation API</h3>
+<p class="project-desc">RESTful API in modern C++ using the Crow framework with personalized recommendations.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">100% Test Coverage</span>
+<span class="impact-badge impact-info">RESTful Design</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">C++</span>
+<span class="tech-tag">Crow Framework</span>
+<span class="tech-tag">REST API</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="book" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- DNA Subsequence Finder -->
+<div class="project-card" data-category="algo">
+<div class="project-img">
+<i class="fas fa-dna"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">DNA Subsequence Finder</h3>
+<p class="project-desc">DNA sequence alignment tool in Java using the Needleman-Wunsch algorithm.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">100% Accuracy</span>
+<span class="impact-badge impact-info">Dynamic Programming</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">Java</span>
+<span class="tech-tag">Dynamic Programming</span>
+<span class="tech-tag">Bioinformatics</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="dna" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- Kernel Canary++ -->
+<div class="project-card" data-category="ml">
+<div class="project-img">
+<i class="fas fa-shield-alt"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">Kernel Canary++</h3>
+<p class="project-desc">Real-time anomaly detection for system logs using AutoML and Isolation Forest.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">0.926 F1-Score</span>
+<span class="impact-badge impact-warning">100k+ Log Entries</span>
+<span class="impact-badge impact-info">2min AutoML Tuning</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Microsoft NNI</span>
+<span class="tech-tag">Isolation Forest</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="kernel" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- Multi-Stop Route Optimizer -->
+<div class="project-card" data-category="algo">
+<div class="project-img">
+<i class="fas fa-route"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">Multi-Stop Route Optimizer</h3>
+<p class="project-desc">Real-time route optimization app using geocoding and dynamic programming.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">30-40% Time Reduction</span>
+<span class="impact-badge impact-warning">15 Stops Optimized</span>
+<span class="impact-badge impact-info">Real-time Geocoding</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Streamlit</span>
+<span class="tech-tag">OSRM</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="route" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- MyShell -->
+<div class="project-card" data-category="systems">
+<div class="project-img">
+<i class="fas fa-terminal"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">MyShell</h3>
+<p class="project-desc">A Unix-like shell written in C with piping and output redirection.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">&lt;1s Execution</span>
+<span class="impact-badge impact-warning">50+ Commands</span>
+<span class="impact-badge impact-info">POSIX System Calls</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">C</span>
+<span class="tech-tag">POSIX</span>
+<span class="tech-tag">System Calls</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="shell" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- Microsoft Azure Talent Change Predictor -->
+<div class="project-card" data-category="ml">
+<div class="project-img">
+<i class="fas fa-brain"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">Microsoft Azure Talent Change Predictor</h3>
+<p class="project-desc">End-to-end ML system to predict job-seeking behavior with XGBoost, Flask, and SHAP.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">67.6% Accuracy</span>
+<span class="impact-badge impact-warning">+112% F1</span>
+<span class="impact-badge impact-info">+185% Recall</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">XGBoost</span>
+<span class="tech-tag">Flask</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="azure" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- AI Powered PDF Q&A Chatbot -->
+<div class="project-card" data-category="ml">
+<div class="project-img">
+<i class="fas fa-file-lines"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">AI Powered PDF Q&amp;A Chatbot</h3>
+<p class="project-desc">Semantic search over long PDFs with embeddings + GPT for real-time answers.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">85% Accuracy</span>
+<span class="impact-badge impact-warning">100+ Pages</span>
+<span class="impact-badge impact-info">Real-time Q/A</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">LangChain</span>
+<span class="tech-tag">OpenAI</span>
+<span class="tech-tag">Astra DB</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="chatbot" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- Convex Hull Visualizer -->
+<div class="project-card" data-category="algo">
+<div class="project-img">
+<i class="fas fa-draw-polygon"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">Convex Hull Visualizer</h3>
+<p class="project-desc">Interactive Java Swing app visualizing Jarvis March for 2D point sets.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">31% Speed Improvement</span>
+<span class="impact-badge impact-warning">0 Graphical Lag</span>
+<span class="impact-badge impact-info">100+ Points</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">Java</span>
+<span class="tech-tag">Swing</span>
+<span class="tech-tag">Jarvis March</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="hull" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- LeafyLink -->
+<div class="project-card" data-category="web">
+<div class="project-img">
+<i class="fas fa-leaf"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">LeafyLink</h3>
+<p class="project-desc">Static plant marketplace with public API integration and Firebase hosting.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">&lt;1.2s Load Time</span>
+<span class="impact-badge impact-warning">Team of 4</span>
+<span class="impact-badge impact-info">API Integration</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">HTML</span>
+<span class="tech-tag">CSS</span>
+<span class="tech-tag">JavaScript</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="leafy" href="#">View Details</a>
+</div>
+</div>
+</div>
+<!-- RPG Super Adventure Game -->
+<div class="project-card" data-category="algo">
+<div class="project-img">
+<i class="fas fa-gamepad"></i>
+</div>
+<div class="project-content">
+<h3 class="project-title">RPG Super Adventure Game</h3>
+<p class="project-desc">Turn-based RPG in C# WinForms showcasing OOP design with 14 classes.</p>
+<div class="project-impact">
+<span class="impact-badge impact-success">14 Classes</span>
+<span class="impact-badge impact-warning">OOP Design</span>
+<span class="impact-badge impact-info">Combat &amp; Quests</span>
+</div>
+<div class="project-tech">
+<span class="tech-tag">C#</span>
+<span class="tech-tag">WinForms</span>
+<span class="tech-tag">OOP</span>
+</div>
+<div class="project-links">
+<a class="btn btn-outline view-details" data-project="rpg" href="#">View Details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+<div class="container">
+<h2>Technical Skills</h2>
+<div class="skills-container">
+<div class="skill-category">
+<h3>Programming Languages</h3>
+<div class="skill-list">
+<span class="skill-item">C++</span>
+<span class="skill-item">C</span>
+<span class="skill-item">C#</span>
+<span class="skill-item">Python</span>
+<span class="skill-item">Java</span>
+<span class="skill-item">JavaScript</span>
+<span class="skill-item">TypeScript</span>
+<span class="skill-item">SQL</span>
+<span class="skill-item">HTML/CSS</span>
+<span class="skill-item">MIPS</span>
+</div>
+</div>
+<div class="skill-category">
+<h3>Frameworks &amp; Libraries</h3>
+<div class="skill-list">
+<span class="skill-item">React</span>
+<span class="skill-item">ASP.NET Core</span>
+<span class="skill-item">Crow (C++)</span>
+<span class="skill-item">Swing (Java)</span>
+<span class="skill-item">Langchain</span>
+<span class="skill-item">Flask</span>
+<span class="skill-item">Streamlit</span>
+</div>
+</div>
+<div class="skill-category">
+<h3>Tools &amp; Technologies</h3>
+<div class="skill-list">
+<span class="skill-item">Git</span>
+<span class="skill-item">Azure</span>
+<span class="skill-item">Firebase</span>
+<span class="skill-item">PostgreSQL</span>
+<span class="skill-item">Docker</span>
+<span class="skill-item">Pandas</span>
+<span class="skill-item">Scikit-learn</span>
+<span class="skill-item">Socket Programming</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Competitions Section -->
+<section class="competitions-section" id="competitions">
+<div class="container">
+<h2>Competitions &amp; Achievements</h2>
+<div class="competitions">
+<div class="competition-card">
+<div class="competition-icon">
+<i class="fas fa-medal"></i>
+</div>
+<h3>ICPC Caribbean Finals 2024</h3>
+<p>Silver Medal (TTO Qualifier)</p>
+</div>
+<div class="competition-card">
+<div class="competition-icon">
+<i class="fas fa-trophy"></i>
+</div>
+<h3>National Science Olympiad 2019</h3>
+<p>Gold Medal (Delhi Public School)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="leadership" id="leadership">
+<div class="container">
+<h2>Leadership &amp; Activities</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-content">
+<div class="timeline-date">August 2025 - Present</div>
+<h3>President</h3>
+<p>UWI SoundWave Society</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<div class="timeline-date">August 2024 - August 2025</div>
+<h3>Vice President</h3>
+<p>UWI Indian Cultural Society</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+<div class="container">
+<h2>Get In Touch</h2>
+<div class="contact-container">
+<div class="contact-info">
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div>
+<h3>Email</h3>
+<p>muditjha1404@gmail.com</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fab fa-linkedin"></i>
+</div>
+<div>
+<h3>LinkedIn</h3>
+<p>linkedin.com/in/mudit-mayank-jha-4b27b7203</p>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fab fa-github"></i>
+</div>
+<div>
+<h3>GitHub</h3>
+<p>github.com/muditjha20</p>
+</div>
+</div>
+</div>
+<div>
+<form action="https://formsubmit.co/muditjha1404@gmail.com" class="contact-form" id="contactForm" method="POST">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
+<button class="btn" type="submit">Send Message</button>
+<input name="_subject" type="hidden" value="New message from your portfolio site"/><input name="_next" type="hidden" value="https://YOUR_GITHUB_PAGES_URL/#contact"/><input name="_honey" style="display:none" type="text"/><input name="_captcha" type="hidden" value="false"/></form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="logo"><span></span></div>
+<div class="social-links">
+<a class="social-link" href="https://github.com/muditjha20" target="_blank"><i class="fab fa-github"></i></a>
+<a class="social-link" href="https://www.linkedin.com/in/mudit-mayank-jha-4b27b7203" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a class="social-link" href="mailto:muditjha1404@gmail.com"><i class="fas fa-envelope"></i></a>
+</div>
+<p>© 2025 Mudit Mayank Jha. All rights reserved.</p>
+</div>
+</footer>
+<!-- Project Modals -->
+<div class="modal" id="projectModal">
+<div class="modal-content">
+<span class="close-modal">×</span>
+<div id="modal-body"></div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
